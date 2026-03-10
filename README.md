@@ -8,11 +8,11 @@ The Takeaway: This project provides a scalable high-cost tail framework that hel
 
 2) Sleep and CVD Predictors: Risk Signal Modeling
 
-The Goal: The goal of this project was to identify sleep and behavioral predictors associated with elevated cardiovascular risk and build an interpretable modeling workflow for risk stratification.
+The Goal: The goal of this project was to identify high-risk member segments associated with elevated ED utilization and total medical cost using sleep-disorder and cardiovascular diagnosis signals in claims data.
 
-The Results: We developed a reproducible analytic pipeline to evaluate longitudinal associations between sleep-related measures and cardiovascular risk indicators, generating ranked predictor signals and segment-level risk profiles for downstream targeting and prevention planning.
+The Results: Using CMS SynPUF claims data, we built a risk-stratification workflow with diagnosis-based condition flags and ED utilization indicators. Members with both sleep and cardiovascular flags showed the highest ED use, and both signals were associated with higher ED utilization and higher total medical cost versus members without those flags.
 
-The Takeaway: This project demonstrates a practical framework for turning behavioral and clinical data into defensible risk signals that can support earlier intervention and population health strategy.
+The Takeaway: This project provides a scalable claims-based risk signal framework that helps teams prioritize high-risk members for targeted care management and cost-containment interventions.
 
 3) PMPM Trending Prototype: Coverage-Mix Distortion Audit
 
