@@ -18,8 +18,8 @@ The Takeaway: This project provides a scalable claims-based risk signal framewor
 
 The Goal: The goal of this project was to build a simple, reproducible PMPM trend framework to test whether observed cost movement reflected real medical trend or denominator mix effects.
 
-The Results: In Connecticut SynPUF data, raw market PMPM declined 15.5% from 2008 to 2009, but the full-year (12-month) cohort showed a +5.4% PMPM increase. This divergence indicated a coverage-duration mix distortion that masked underlying cost trend in the aggregate view.
+The Results: In Connecticut SynPUF data, raw market PMPM declined 15.5% from 2008 to 2009, but the full-year (12-month) cohort showed a +5.4% PMPM increase. This divergence indicated a coverage-duration mix distortion that masked underlying cost trend in the aggregate view. I also built a lightweight review dashboard and memo-generation workflow to turn validated trend outputs into a reusable analyst-facing reporting tool.
 
-The Takeaway: This project provides a defensible PMPM audit workflow that separates population-mix artifacts from underlying trend and improves confidence in cost trend interpretation before action is taken.
+The Takeaway: This project provides a defensible PMPM audit workflow that separates population-mix artifacts from underlying trend and improves confidence in cost trend interpretation before action is taken. The dashboard extension also shows how the same analysis can be packaged for faster repeat review and stakeholder communication.
 
 
