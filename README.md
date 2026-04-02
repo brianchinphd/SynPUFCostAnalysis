@@ -1,25 +1,59 @@
-1) High-Cost Tail Simulation: Outpatient Spend Concentration
+# SynPUFCostAnalysis
 
-The Goal: The goal of this project was to identify the highest-cost outpatient member segment and simulate targeted cost-reduction strategies to support cost-of-care prioritization.
+This repository contains payer-style healthcare analytics case studies built with the CMS Medicare Synthetic Public Use Files (SynPUF, Sample 13). The portfolio is designed to show how claims-style data can be translated into decision support for cost of care, risk stratification, and PMPM trend validation.
 
-The Results: Using SynPUF claims data, we found that the top 1.25% of members accounted for 14% of outpatient spend. We then modeled condition-focused intervention scenarios and compared expected savings across service lines to identify the most actionable targets.
+## What This Portfolio Demonstrates
 
-The Takeaway: This project provides a scalable high-cost tail framework that helps teams focus on the small segment driving disproportionate spend and prioritize interventions with the strongest projected impact.
+- Claims-based healthcare analytics using Python and SQL-style workflows
+- Cost-of-care and utilization analysis across large administrative datasets
+- Risk stratification, cohort segmentation, and trend decomposition
+- Reproducible, decision-facing analytics that connect findings to action
 
-2) Sleep and CVD Predictors: Risk Signal Modeling
+## Project Directory
 
-The Goal: The goal of this project was to identify high-risk member segments associated with elevated ED utilization and total medical cost using sleep-disorder and cardiovascular diagnosis signals in claims data.
+### 1. High-Cost Tail Simulation: Outpatient Spend Concentration
 
-The Results: Using CMS SynPUF claims data, we built a risk-stratification workflow with diagnosis-based condition flags and ED utilization indicators. Members with both sleep and cardiovascular flags showed the highest ED use, and both signals were associated with higher ED utilization and higher total medical cost versus members without those flags.
+**Business question**  
+Which outpatient member segment is driving disproportionate spend, and where would targeted intervention be most actionable?
 
-The Takeaway: This project provides a scalable claims-based risk signal framework that helps teams prioritize high-risk members for targeted care management and cost-containment interventions.
+**Approach**  
+Using SynPUF claims data, this project identifies the highest-cost outpatient member segment and simulates condition-focused cost-reduction scenarios across service lines.
 
-3) PMPM Trending Prototype: Coverage-Mix Distortion Audit
+**Key result**  
+The top 1.25% of members accounted for 14% of outpatient spend. Intervention scenarios were then modeled to compare expected savings and identify the most actionable targets.
 
-The Goal: The goal of this project was to build a simple, reproducible PMPM trend framework to test whether observed cost movement reflected real medical trend or denominator mix effects.
+**Why it matters**  
+This project provides a scalable high-cost tail framework that helps cost-of-care teams focus on the small segment driving disproportionate spend and prioritize interventions with the strongest projected impact.
 
-The Results: In Connecticut SynPUF data, raw market PMPM declined 15.5% from 2008 to 2009, but the full-year (12-month) cohort showed a +5.4% PMPM increase. This divergence indicated a coverage-duration mix distortion that masked underlying cost trend in the aggregate view. I also built a lightweight review dashboard and memo-generation workflow to turn validated trend outputs into a reusable analyst-facing reporting tool.
+### 2. Sleep and CVD Predictors: Risk Signal Modeling
 
-The Takeaway: This project provides a defensible PMPM audit workflow that separates population-mix artifacts from underlying trend and improves confidence in cost trend interpretation before action is taken. The dashboard extension also shows how the same analysis can be packaged for faster repeat review and stakeholder communication.
+**Business question**  
+Can diagnosis-based signals identify members at elevated risk for higher ED utilization and total medical cost?
 
+**Approach**  
+Using CMS SynPUF claims data, this project builds a claims-based risk stratification workflow using sleep-disorder and cardiovascular diagnosis flags linked to ED utilization and total cost.
 
+**Key result**  
+Members with both sleep and cardiovascular flags showed the highest ED use. Both signals were also associated with higher ED utilization and higher total medical cost compared with members without those flags.
+
+**Why it matters**  
+This project demonstrates a scalable claims-based risk signal framework that can support targeted care management, high-risk member identification, and cost-containment strategy.
+
+### 3. PMPM Trending Prototype: Coverage-Mix Distortion Audit
+
+**Business question**  
+Does observed PMPM movement reflect true medical trend, or is it being distorted by denominator mix effects?
+
+**Approach**  
+This project uses Connecticut SynPUF data to build a reproducible PMPM trend framework that compares aggregate results with a stable full-year cohort to test for coverage-duration mix distortion.
+
+**Key result**  
+Raw market PMPM declined 15.5% from 2008 to 2009, but the 12-month stable cohort showed a 5.4% increase. This divergence suggested that coverage-duration mix was masking the underlying cost trend.
+
+**Why it matters**  
+This project provides a defensible PMPM audit workflow that separates population-mix artifacts from underlying trend and improves confidence in cost trend interpretation before action is taken. A lightweight dashboard and memo-generation extension also show how validated trend outputs can be packaged for repeat review and stakeholder communication.
+
+## Notes
+
+- All analyses use synthetic CMS SynPUF data and are intended to demonstrate analytic logic and workflow design rather than real market conditions.
+- These projects are decision-support prototypes with emphasis on the business framing, analytic reasoning, and reproducible workflow.
